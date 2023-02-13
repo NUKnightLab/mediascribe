@@ -1,1 +1,2 @@
 starlite==1.51.*
+uvicorn==0.20.*
