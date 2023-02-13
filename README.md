@@ -36,6 +36,13 @@ uvicorn mediascribe.main:app --reload
 TODO
 
 
+### Code style
+
+```
+black src
+```
+
+
 ## API documentation
 
 Endpoints:
