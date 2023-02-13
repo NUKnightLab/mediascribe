@@ -6,9 +6,14 @@ Web application for automatic speech recognition of web-based AV content
 
 either:
 
- - DIY in a virtualenv, or
- - docker-compose
+ - docker-compose, or
+ - DIY in a virtualenv
 
+### Using docker-compose
+
+```
+docker compose up
+```
 
 ### In a virtualenv
 
@@ -29,11 +34,6 @@ export PYTHONPATH = src:$PYTHONPATH
 ```
 uvicorn mediascribe.main:app --reload
 ```
-
-
-### Using docker-compose
-
-TODO
 
 
 ### Code style

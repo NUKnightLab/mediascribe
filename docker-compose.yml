@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  app:
+    restart: always
+    build:
+      context: .
+    ports:
+      - ${API_PORT:-8000}:${API_PORT:-8000}
+    volumes:
+      - ./src:/usr/src
+    working_dir: /usr/src
+    command: uvicorn mediascribe.main:app --reload --host 0.0.0.0 --port ${API_PORT:-8000}
